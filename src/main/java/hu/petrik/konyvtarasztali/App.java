@@ -18,6 +18,12 @@ public class App extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {launch();
+    public static void main(String[] args) {
+        if (Arrays.asList(args).contains("--stat")){
+            Statisztika.main(args);
+        } else {
+            launch();
+        }
     }
+
 }

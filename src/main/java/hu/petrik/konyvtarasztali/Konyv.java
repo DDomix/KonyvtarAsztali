@@ -6,6 +6,7 @@ public class Konyv {
     private String author;
     private int publish_year;
     private int page_count;
+    private long rental_count;
 
     public Konyv(int id, String title, String author, int publish_year, int page_count) {
         this.id = id;
@@ -13,6 +14,7 @@ public class Konyv {
         this.author = author;
         this.publish_year = publish_year;
         this.page_count = page_count;
+        this.rental_count=0;
     }
 
     public Konyv(String title, String author, int publish_year, int page_count) {
@@ -60,5 +62,13 @@ public class Konyv {
 
     public void setPage_count(int page_count) {
         this.page_count = page_count;
+    }
+
+    public long getRental_count() {
+        return rental_count;
+    }
+
+    public void setRental_count(long rental_count) {
+        this.rental_count = rental_count;
     }
 }
