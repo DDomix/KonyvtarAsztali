@@ -136,7 +136,4 @@ public class Statisztika {
         KonyvDB db = new KonyvDB();
         konyvek = db.readKonyv();
     }
-    private static void KiaSzerzo(String title){
-
-    }
 }
